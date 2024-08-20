@@ -14,5 +14,8 @@ def nth_root(number, n):
     root = number ** (1 / n)
     return round(root, 2)
 
-print(nth_root(27, 4))
-print(nth_root(16, 4))
+x = float(input('Enter number: '))
+y = float(input('Enter square root of number: '))
+
+print("Ans: ", nth_root(x, y))
+# print(nth_root(16, 4))
