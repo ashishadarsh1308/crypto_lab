@@ -1,3 +1,4 @@
+
 def generate_numeric_key(key):
     # Generate a numeric key sequence from the key
     key_order = sorted(list(key))
@@ -53,13 +54,11 @@ def row_transposition_decrypt(ciphertext, key):
     return plaintext.rstrip('X')  # Remove padding
 
 # Example Usage
-plaintext = input('Enter message : ')
-key = "ZEBRAS"
+plaintext = input("Enter plain text ")
+key = input("Enter key ")
 
 encrypted_text = row_transposition_encrypt(plaintext, key)
 decrypted_text = row_transposition_decrypt(encrypted_text, key)
 
-print(f"Plaintext: {plaintext}")
-print(f"Key: {key}")
 print(f"Encrypted: {encrypted_text}")
 print(f"Decrypted: {decrypted_text}")
